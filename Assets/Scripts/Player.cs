@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float moveForce = 10f;
     [SerializeField]
-    private float jumpForce = 11f;
+    private float jumpForce = 15f;
     private float movementX;
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
@@ -37,14 +37,13 @@ public class Player : MonoBehaviour
         
         PlayerMoveKeyboard();
         AnimatePlayer();
-
+        PlayerJump();
+        
     }
     
     // Update is called only on settings defined in Game
     private void FixedUpdate() {
-        
-        PlayerJump();
-    }
+        }
 
     void PlayerMoveKeyboard() {
 

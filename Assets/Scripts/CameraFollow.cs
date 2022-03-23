@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour
         if(tempPos.x < minX)
             tempPos.x = minX;
         
-        if(tempPos.x < maxX)
+        if(tempPos.x > maxX)
             tempPos.x = maxX;
 
         transform.position = tempPos;
